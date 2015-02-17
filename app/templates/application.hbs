@@ -1,3 +1,9 @@
-<h2 id="title">Welcome to Ember.js</h2>
-
+<h1 id="title">Markdown to Html</h2>
+<div id='titles'><h2 id='left'>Markdown:</h2><h2 id='right'>HTML:</h2></div>
+<section class = 'input-text'>
+{{textarea value=markdowntext cols="80" rows="40" placeholder='write markdown here'}}
+</section>
+<section class = 'output-text'>
+{{markdown-to-html markdown=markdowntext}}
+</section>
 {{outlet}}
